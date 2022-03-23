@@ -8,5 +8,5 @@ if (message) {
   childProcess.execSync('git  pull');
   childProcess.execSync('git add .');
   childProcess.execSync(`git commit -m '${message}'`);
-  childProcess.execSync('git push -u orgin master');
+  childProcess.execSync('git push -u origin master');
 }
