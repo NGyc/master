@@ -6,8 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "prepare": "husky install",
-    "commit":"node ./build/commit.js"
+    "commit": "node ./build/commit.js"
   },
   "dependencies": {
     "core-js": "^3.8.3",
@@ -23,7 +22,10 @@
     "eslint": "^8.11.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.25.4",
-    "eslint-plugin-vue": "^8.5.0"
+    "eslint-plugin-vue": "^8.5.0",
+    "ts-loader": "^9.2.8",
+    "typescript": "^4.6.2",
+    "vue-property-decorator": "^9.1.2"
   },
   "eslintConfig": {
     "root": true,
