@@ -9,7 +9,9 @@
     "commit": "node ./build/commit.js"
   },
   "dependencies": {
+    "babel-eslint": "^10.1.0",
     "core-js": "^3.8.3",
+    "typescript-eslint": "0.0.1-alpha.0",
     "vue": "^3.2.13",
     "yargs": "^17.4.0"
   },

@@ -3,6 +3,7 @@ module.exports = {
     browser: true,
     es2021: true,
   },
+  parser: "typescript-eslint ",
   ecmaFeatures: {
     // lambda表达式
     arrowFunctions: true,

@@ -6,7 +6,7 @@
 
 </template>
 
-<script>
+<script lang="ts">
 import HelloWorld from "./components/HelloWorld.vue"
 
 export default {
@@ -18,7 +18,7 @@ export default {
     getdate() {
       const a = [1, 2, 3]
       const b:number = 1
-      console.log(a，b)
+      console.log(a,b)
     },
   },
 }
