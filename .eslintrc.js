@@ -3,7 +3,6 @@ module.exports = {
     browser: true,
     es2021: true,
   },
-  parser: "typescript-eslint ",
   ecmaFeatures: {
     // lambda表达式
     arrowFunctions: true,
@@ -19,6 +18,7 @@ module.exports = {
   parserOptions: {
     ecmaVersion: "latest",
     sourceType: "module",
+    parser: "@typescript-eslint/parser",
     ecmaFeatures: {
       modules: true,
     },
