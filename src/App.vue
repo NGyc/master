@@ -16,7 +16,7 @@ export default {
   },
   methods: {
     getdate() {
-      const a = [1, 2, 3]
+      const a = [1, 2, 3, 4]
       const b:number = 1
       console.log(a, b)
     },
