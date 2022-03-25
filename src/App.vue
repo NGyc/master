@@ -1,26 +1,30 @@
 <template>
   <div>
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App1"/>
+    <HelloWorld :msg="msg"/>
   </div>
-
 </template>
 
 <script lang="ts">
+import { Options, Vue } from "vue-class-component"
 import HelloWorld from "./components/HelloWorld.vue"
 
-export default {
-  name: "App",
+@Options({
   components: {
     HelloWorld,
   },
-  methods: {
-    getdate() {
-      const a = [1, 2, 3, 4]
-      const b:number = 22
-      console.log(a, b)
-    },
-  },
+})
+
+export default class App extends Vue {
+  msg:number = 123
+
+  created() {
+    // console.log(this.msg)
+  }
+
+  getData():void {
+    // console.log(this.msg)
+  }
 }
 </script>
 
