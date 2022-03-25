@@ -6,12 +6,14 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "commit": "node ./build/commit.js"
+    "commit": "node ./build/commit.ts",
+    "test": "vue add typescript"
   },
   "dependencies": {
     "babel-eslint": "^10.1.0",
     "core-js": "^3.8.3",
     "vue": "^3.2.13",
+    "vue-class-component": "^8.0.0-0",
     "yargs": "^17.4.0"
   },
   "devDependencies": {
@@ -21,7 +23,9 @@
     "@typescript-eslint/parser": "^5.16.0",
     "@vue/cli-plugin-babel": "~5.0.0",
     "@vue/cli-plugin-eslint": "~5.0.0",
+    "@vue/cli-plugin-typescript": "^5.0.4",
     "@vue/cli-service": "~5.0.0",
+    "@vue/eslint-config-typescript": "^9.1.0",
     "eslint": "^8.11.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.25.4",
@@ -37,10 +41,11 @@
     },
     "extends": [
       "plugin:vue/vue3-essential",
-      "eslint:recommended"
+      "eslint:recommended",
+      "@vue/typescript"
     ],
     "parserOptions": {
-      "parser": "@babel/eslint-parser"
+      "parser": "@typescript-eslint/parser"
     },
     "rules": {}
   },
