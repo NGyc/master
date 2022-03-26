@@ -34,6 +34,14 @@ module.exports = {
     "no-console": "off",
     // 指定数组的元素之间要以空格隔开(,后面)， never参数：[ 之前和 ] 之后不能带空格，always参数：[ 之前和 ] 之后必须带空格
   },
+  settings: {
+    "import/resolver": {
+      node: {
+        // 此处config对应webpack.config.js的路径，我这个路径是vue-cli3默认的路径
+        paths: ["src"],
+      },
+    },
+  },
   // globals: {
   //   windows: false,
   //   location: false,
