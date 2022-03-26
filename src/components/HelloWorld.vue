@@ -1,7 +1,8 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <!-- <el-button>{{$t('默认按钮')}}</el-button> -->
+    <!-- {{ $t('默认按钮') }} -->
+    <el-button></el-button>
   </div>
 </template>
 

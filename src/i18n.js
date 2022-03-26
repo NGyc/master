@@ -1,10 +1,9 @@
-import { createApp } from "vue"
-import ElementPlus from "element-plus"
-import "element-plus/dist/index.css"
-import zhCn from "element-plus/es/locale/lang/zh-cn"
 import { createI18n } from "vue-i18n"
-import App from "./App.vue"
+import { createApp } from "vue"
 import mZhLocale from "./local/language/languageCN"
+import App from "./App.vue"
+
+const app = createApp(App)
 
 const messages = {
   zh: {
@@ -22,8 +21,4 @@ const i18n = createI18n({
   locale: "zh-CN",
   messages,
 })
-const app = createApp(App)
 app.use(i18n)
-app.use(ElementPlus, {
-  locale: zhCn,
-}).mount("#app")
